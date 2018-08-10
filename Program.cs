@@ -14,7 +14,7 @@ namespace SimpleDownloadServer
             {
                 public bool TryGetContentType(string subpath, out string contentType)
                 {
-                    contentType = "application/x-msdownload";
+                    contentType = "application/octet-stream";
                     return true;
                 }
             }
