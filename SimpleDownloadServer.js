@@ -1,4 +1,4 @@
-const { spawn } = require('child_process');
+const spawn = require('child_process').spawn;
 const dotnet = spawn('dotnet', ['run', '--urls', 'http://*:5000']);
 
 dotnet.stdout.pipe(process.stdout);
